@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="myDiv" class="header jumbotron text-center">
+            <h1>My ToDo List</h1>
+            <h3>Inlämningsuppgift n.1</h3>
+            <p>Fend17 - Paulo Vila Nova - Nackademin</p>
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" id="myInput" class="form-control" size="50" 
+                    placeholder="Type the item.." required>
+                    <div class="input-group-btn">
+                        <button type="button" onclick="newElement()" 
+                        class="btn btn-warning">Add to list</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <ul id="myList">
+            <li></li>
+            <!-- Insert the new list -->
+        </ul>
+        <hr>
+        <div class="done-list container-fluid">
+            <h2>My Done list</h2>
+            <ul id="myDoneList">
+                <!-- Insert the new list -->
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
